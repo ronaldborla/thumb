@@ -1,0 +1,21 @@
+{
+  "name": "ronaldborla/thumb",
+  "description": "Image thumbnails",
+  "keywords": ["ronaldborla", "thumb"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ronald Borla",
+      "email": "ronald.borla@yahoo.com"
+    }
+  ],
+  "require": {
+    "ronaldborla/canvas": "dev-master"
+  },
+  "autoload": {
+    "psr-0": {
+      "Borla\\Thumb": "src/"
+    }
+  },
+  "minimum-stability": "dev"
+}
