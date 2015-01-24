@@ -9,7 +9,7 @@
       "email": "ronald.borla@yahoo.com"
     }
   ],
-  "require-dev": {
+  "require": {
     "ronaldborla/canvas": "dev-master"
   },
   "autoload": {
