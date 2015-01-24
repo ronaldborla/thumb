@@ -179,6 +179,28 @@ class Thumb extends \Borla\Canvas\Properties\Property {
   }
 
   /**
+   * Save
+   */
+  function save($filename, $type = false, $quality = false) {
+    // If there's no type
+    if (!$type) {
+      // Set type
+      $type = $this->type;
+    }
+    // If there's no quality
+    if ($quality === false) {
+      // Set quality
+      $quality = $this->quality;
+    }
+    // Dump
+    $this->canvas->save($filename, $type, array(
+      'quality'=> $quality
+    ));
+    // Return
+    return $this;
+  }
+
+  /**
    * Destroy
    */
   function destroy() {
